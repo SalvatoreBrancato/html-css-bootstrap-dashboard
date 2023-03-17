@@ -1,33 +1,112 @@
-.btn-notifiche{
-    border: none;
-}
+/*******************************************************************************
+ID
+*******************************************************************************/
 
 #schermo{
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 #left-bar{
-    height: 100vh;
+    height: 100%;
     width: 50px;
     background-color: rgb(53, 50, 50);
     background-image: url(../img/sidebar-bg.png);
     
 }
 
-@media only screen and (min-width:992px){
-    #left-bar{
-        width: 100px;
-    }
-}
-
 #contenuto-top{
     /* height: 20%; */
-    width: 100%;
+    /* width: 100%; */
     background-color: rgb(75, 130, 250);
 }
 
 #contenuto-bottom{
-    background-color: red;
-    height: 89.5%;
-    width: 100%;
+    background-color: rgb(242, 237, 237);
+    /* height: 89.5%; */
+    /* width: calc(100% -50px); */
 }
+
+
+/*******************************************************************************
+BTN-INPUT
+*******************************************************************************/
+
+.btn-notifiche{
+    border: none;
+}
+
+.input-group{
+    width: 75%;
+}
+
+.container-table,
+.container-faq{
+    /* width: 65%; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* .bg-gray{
+    background-color: gray;
+} */
+
+.container-todo,
+.container-grafico{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.contenuto{
+    height: 100%;
+    width: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*******************************************************************************
+UTILITY
+*******************************************************************************/
+
+.w-88{
+    width: 88%;
+}
+
+.w-95{
+    width: 95%;
+}
+
+main{
+    height: 100%;
+    padding-top: 76px;
+}
+
+/*******************************************************************************
+MEDIA
+*******************************************************************************/
+
+@media only screen and (min-width:992px){
+    #left-bar{
+        width: 100px;
+    }
+
+    #offcanvasRight{
+        width: 45%!important;
+    }
+
+    /* #contenuto-bottom{
+        width: calc(100% -100px);
+    } */
+
+    .contenuto{
+        height: 100%;
+        width: calc(100% - 100px);
+    }
+
+    main{
+        padding-top: 54px;
+    }
+}
+
